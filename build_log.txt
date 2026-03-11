@@ -1,0 +1,937 @@
+﻿Running Gradle task 'assembleDebug'...                          
+flutter : 
+At line:1 char:1
++ flutter build apk 
+--debug 2>&1 | 
+Out-File -FilePath 
+C:\Users\HP\Studi ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (:String) [   
+ ], RemoteExceptio    
+n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':webview_flutter
+_android:compileDebugK
+otlin'.
+> Could not resolve 
+all files for 
+configuration ':webvie
+w_flutter_android:deta
+chedConfiguration6'.
+   > Failed to 
+transform android.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\AppData\Local\Andro
+id\sdk\platforms\andro
+id-36\android.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+core-lambda-stubs.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\AppData\Local\Andro
+id\sdk\build-tools\35.
+0.0\core-lambda-stubs.
+jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform R.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\StudioProjects\auto
+_Showcase\build\webvie
+w_flutter_android\inte
+rmediates\compile_r_cl
+ass_jar\debug\generate
+DebugRFile\R.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform flutter_embe
+dding_debug-1.0.0-78fc
+3012e45889657f72359b00
+5af7beac47ba3d.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\io.flu
+tter\flutter_embedding
+_debug\1.0.0-78fc3012e
+45889657f72359b005af7b
+eac47ba3d\f933f8d7e023
+f3d80a4d44580640269efb
+9bc72d\flutter_embeddi
+ng_debug-1.0.0-78fc301
+2e45889657f72359b005af
+7beac47ba3d.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform fragment-1.7
+.1-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\62ace5eaef
+97ea8ba6bb013f0374d6a1
+\transformed\fragment-
+1.7.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+webkit-1.15.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\fe9f9b04eb
+a5613b4faf1873d91948c6
+\transformed\webkit-1.
+15.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform activity-1.8
+.1-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\0bc3eb1ce6
+b4e54ae595ac3f559fe2c6
+\transformed\activity-
+1.8.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+loader-1.0.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\b884181761
+5e52e57199391093c7d691
+\transformed\loader-1.
+0.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-li
+vedata-core-ktx-2.7.0-
+api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\243afd1882
+0d1bd7f72d8a5d204604fe
+\transformed\lifecycle
+-livedata-core-ktx-2.7
+.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-li
+vedata-2.7.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\412e6a2154
+7e54346de1c8ecef6b5721
+\transformed\lifecycle
+-livedata-2.7.0-api.ja
+r.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-vi
+ewmodel-2.7.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\752b2b6bca
+67ecdcbb918ad103bf557d
+\transformed\lifecycle
+-viewmodel-2.7.0-api.j
+ar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-li
+vedata-core-2.7.0-api.
+jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\9be4d4aa3c
+c2bb03d6e910f75ebb642a
+\transformed\lifecycle
+-livedata-core-2.7.0-a
+pi.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-vi
+ewmodel-savedstate-2.7
+.0-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\a57cd66cc3
+45ee766f55c12be427cdc4
+\transformed\lifecycle
+-viewmodel-savedstate-
+2.7.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform core-ktx-1.1
+3.1-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\730b20dff5
+5c2da56ff5bc5af1822b74
+\transformed\core-ktx-
+1.13.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform viewpager-1.
+0.0-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\b09b2b6aa4
+3f94dd39a4d851e15b8c66
+\transformed\viewpager
+-1.0.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform customview-1
+.0.0-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\af8d65b706
+3d4462e194e749ae6a8882
+\transformed\customvie
+w-1.0.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+core-1.13.1-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\15f31eb4ad
+4bf81f25495238fe956022
+\transformed\core-1.13
+.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-ru
+ntime-2.7.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\100edd88e4
+d6142b824e1e787d3b5da9
+\transformed\lifecycle
+-runtime-2.7.0-api.jar
+.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-pr
+ocess-2.7.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\5b09770c40
+7639cf05be76b125422c2a
+\transformed\lifecycle
+-process-2.7.0-api.jar
+.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-co
+mmon-java8-2.7.0.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\androi
+dx.lifecycle\lifecycle
+-common-java8\2.7.0\2a
+d14aed781c4a73ed4dbb42
+1966d408a0a06686\lifec
+ycle-common-java8-2.7.
+0.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform lifecycle-co
+mmon-2.7.0.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\androi
+dx.lifecycle\lifecycle
+-common\2.7.0\85334205
+d65cca70ed0109c3acbd29
+e22a2d9cb1\lifecycle-c
+ommon-2.7.0.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+window-1.2.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\811ad33d01
+5e7a51ef7f9a4cc7475887
+\transformed\window-1.
+2.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform window-java-
+1.2.0-api.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\f0e8ad0c8e
+64a135cf2ad85f0d3f6ac5
+\transformed\window-ja
+va-1.2.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform core-runtime
+-2.2.0-api.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\79f57d5150
+a61463b639590bfb15371c
+\transformed\core-runt
+ime-2.2.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+core-common-2.2.0.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\androi
+dx.arch.core\core-comm
+on\2.2.0\5e1b8b81dfd5f
+52c56a8d53b18ca759c19a
+301f3\core-common-2.2.
+0.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform versionedpar
+celable-1.1.1-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\aac58aff4b
+0ca86cc7a1381d5f67fe17
+\transformed\versioned
+parcelable-1.1.1-api.j
+ar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+collection-1.1.0.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\androi
+dx.collection\collecti
+on\1.1.0\1f27220b47669
+781457de0d600849a5de0e
+89909\collection-1.1.0
+.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform savedstate-1
+.2.1-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\c497947099
+6df406ebc456f9b13a0630
+\transformed\savedstat
+e-1.2.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform annotation-j
+vm-1.9.1.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\androi
+dx.annotation\annotati
+on-jvm\1.9.1\b17951747
+e38bf3986a24431b9ba0d0
+39958aa5f\annotation-j
+vm-1.9.1.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform annotation-e
+xperimental-1.4.0-api.
+jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\4a3039ef4f
+f77fb2a046a0518ff7a8cb
+\transformed\annotatio
+n-experimental-1.4.0-a
+pi.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform kotlinx-coro
+utines-android-1.7.1.j
+ar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains.kotlinx\kotlin
+x-coroutines-android\1
+.7.1\c2d86b569f10b7fc7
+e28d3f50c0eed97897d77a
+7\kotlinx-coroutines-a
+ndroid-1.7.1.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform kotlinx-coro
+utines-core-jvm-1.7.1.
+jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains.kotlinx\kotlin
+x-coroutines-core-jvm\
+1.7.1\63a0779cf668e2a4
+7d13fda7c3b0c4f8dc7762
+f4\kotlinx-coroutines-
+core-jvm-1.7.1.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform kotlin-stdli
+b-jdk8-1.8.20.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains.kotlin\kotlin-
+stdlib-jdk8\1.8.20\735
+76ddf378c5b4f1f6b449fe
+6b119b8183fc078\kotlin
+-stdlib-jdk8-1.8.20.ja
+r.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform kotlin-stdli
+b-jdk7-1.8.20.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains.kotlin\kotlin-
+stdlib-jdk7\1.8.20\3aa
+51faf20aae8b31e1a4bc54
+f8370673d7b7df4\kotlin
+-stdlib-jdk7-1.8.20.ja
+r.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform kotlin-stdli
+b-2.2.20.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains.kotlin\kotlin-
+stdlib\2.2.20\5380b19f
+a1924399b62ce3a1faffeb
+b2b4f82272\kotlin-stdl
+ib-2.2.20.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform annotations-
+23.0.0.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.je
+tbrains\annotations\23
+.0.0\8cc20c07506ec18e0
+834947b84a864bfc094484
+e\annotations-23.0.0.j
+ar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform startup-runt
+ime-1.1.1-api.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\66a55c9302
+b8dacfca4a88d55f2bb41c
+\transformed\startup-r
+untime-1.1.1-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+tracing-1.2.0-api.jar 
+to match attributes {a
+rtifactType=classpath-
+entry-snapshot, org.gr
+adle.libraryelements=j
+ar, org.gradle.usage=j
+ava-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\0323f414d3
+b6f829989b737577ddbcb8
+\transformed\tracing-1
+.2.0-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform relinker-1.4
+.5-api.jar to match 
+attributes {artifactTy
+pe=classpath-entry-sna
+pshot, org.gradle.libr
+aryelements=jar, org.g
+radle.usage=java-runti
+me}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\8.14
+\transforms\b5ea8c96fd
+0431c40235788c8b3be10a
+\transformed\relinker-
+1.4.5-api.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+   > Failed to 
+transform 
+jspecify-1.0.0.jar to 
+match attributes {arti
+factType=classpath-ent
+ry-snapshot, org.gradl
+e.libraryelements=jar,
+ org.gradle.usage=java
+-runtime}.
+      > Execution 
+failed for BuildToolsA
+piClasspathEntrySnapsh
+otTransform: C:\Users\
+HP\.gradle\caches\modu
+les-2\files-2.1\org.js
+pecify\jspecify\1.0.0\
+7425a601c1c7ec76645a78
+d22b8c6a627edee507\jsp
+ecify-1.0.0.jar.
+         > org/jetbrai
+ns/kotlin/config/Kotli
+nCompilerVersion
+
+* Try:
+> Run with 
+--stacktrace option 
+to get the stack 
+trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to 
+get full insights.
+> Get more help at htt
+ps://help.gradle.org.
+
+BUILD FAILED in 4s
+Running Gradle task 'assembleDebug'...                              4.8s
+Gradle task 
+assembleDebug failed 
+with exit code 1
