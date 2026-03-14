@@ -36,38 +36,43 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0A0A),
-      body: FadeTransition(
-        opacity: _fadeAnimation,
-        child: Stack(
-          children: [
-            // ── Layer 1: Studio Background Gradient ──
-            _buildStudioBackground(),
+      backgroundColor: const Color(0xFFC9C9C9),
+      body: Stack(
+        children: [
+          // ── Layer 1: Fade-in Background and Effects ──
+          FadeTransition(
+            opacity: _fadeAnimation,
+            child: Stack(
+              children: [
+                _buildStudioBackground(),
+                _buildSpotlightEffect(),
+                _buildCinematicFog(),
+                _buildFloorReflection(),
+                _buildVignette(),
+              ],
+            ),
+          ),
 
-            // ── Layer 2: Top Spotlight Effect ──
-            _buildSpotlightEffect(),
+          // ── Layer 2: 3D Car Model (Top-level to prevent lag) ──
+          // Moving this above the transparent layers drastically improves performance
+          _buildCarModel(),
 
-            // ── Layer 3: Cinematic Fog ──
-            _buildCinematicFog(),
-
-            // ── Layer 4: 3D Car Model ──
-            _buildCarModel(),
-
-            // ── Layer 5: Floor Reflection / Glossy Surface ──
-            _buildFloorReflection(),
-
-            // ── Layer 6: Top Vignette ──
-            _buildVignette(),
-
-            // ── Layer 7: Overlay UI ──
-            _buildOverlayUI(),
-          ],
-        ),
+          // ── Layer 3: Overlay UI (Fade-in) ──
+          Positioned(
+            bottom: 40,
+            left: 24,
+            right: 24,
+            child: FadeTransition(
+              opacity: _fadeAnimation,
+              child: _buildOverlayUI(),
+            ),
+          ),
+        ],
       ),
     );
   }
 
-  /// Dark studio radial gradient background
+  /// Light studio radial gradient background
   Widget _buildStudioBackground() {
     return Container(
       decoration: const BoxDecoration(
@@ -75,9 +80,9 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
           center: Alignment(0.0, -0.3),
           radius: 1.2,
           colors: [
-            Color(0xFF1A1A1A), // Dark charcoal center
-            Color(0xFF111111),
-            Color(0xFF0A0A0A), // Near-black edges
+            Color(0xFFFFFFFF), // Bright center
+            Color(0xFFE2E2E2), // Light grey mid
+            Color(0xFFC9C9C9), // Grey edges
           ],
           stops: [0.0, 0.5, 1.0],
         ),
@@ -100,8 +105,8 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
               center: Alignment.topCenter,
               radius: 0.8,
               colors: [
-                Colors.white.withValues(alpha: 0.06),
-                Colors.white.withValues(alpha: 0.02),
+                Colors.white.withValues(alpha: 0.4),
+                Colors.white.withValues(alpha: 0.1),
                 Colors.transparent,
               ],
               stops: const [0.0, 0.4, 1.0],
@@ -125,8 +130,8 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
             colors: [
-              Colors.white.withValues(alpha: 0.03),
-              Colors.white.withValues(alpha: 0.015),
+              Colors.white.withValues(alpha: 0.3),
+              Colors.white.withValues(alpha: 0.1),
               Colors.transparent,
             ],
             stops: const [0.0, 0.3, 1.0],
@@ -145,6 +150,7 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
         autoPlay: true,
         autoRotate: true,
         cameraControls: true,
+        disableZoom: true, // Disable zoom to prevent accidental stutters
         backgroundColor: Colors.transparent,
       ),
     );
@@ -164,8 +170,8 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
               colors: [
-                Colors.white.withValues(alpha: 0.04),
-                Colors.white.withValues(alpha: 0.015),
+                Colors.white.withValues(alpha: 0.4),
+                Colors.white.withValues(alpha: 0.15),
                 Colors.transparent,
               ],
               stops: const [0.0, 0.4, 1.0],
@@ -187,7 +193,7 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
               radius: 1.0,
               colors: [
                 Colors.transparent,
-                Colors.black.withValues(alpha: 0.5),
+                Colors.black.withValues(alpha: 0.15),
               ],
               stops: const [0.6, 1.0],
             ),
@@ -199,56 +205,51 @@ class _CarShowroomScreenState extends State<CarShowroomScreen>
 
   /// Minimal overlay UI — car name & branding
   Widget _buildOverlayUI() {
-    return Positioned(
-      bottom: 40,
-      left: 24,
-      right: 24,
-      child: IgnorePointer(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Car Model Name
-            Text(
-              'HONDA NSX NA1',
-              style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.85),
-                fontSize: 22,
-                fontWeight: FontWeight.w300,
-                letterSpacing: 8.0,
-              ),
+    return IgnorePointer(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Car Model Name
+          Text(
+            'HONDA NSX NA1',
+            style: TextStyle(
+              color: Colors.black.withValues(alpha: 0.85),
+              fontSize: 22,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 8.0,
             ),
-            const SizedBox(height: 6),
-            // Sub-badge
-            Text(
-              'LB★WORKS',
-              style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.45),
-                fontSize: 12,
-                fontWeight: FontWeight.w400,
-                letterSpacing: 5.0,
-              ),
+          ),
+          const SizedBox(height: 6),
+          // Sub-badge
+          Text(
+            'LB★WORKS',
+            style: TextStyle(
+              color: Colors.black.withValues(alpha: 0.6),
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+              letterSpacing: 5.0,
             ),
-            const SizedBox(height: 16),
-            // Thin separator line
-            Container(
-              width: 60,
-              height: 1,
-              color: Colors.white.withValues(alpha: 0.15),
+          ),
+          const SizedBox(height: 16),
+          // Thin separator line
+          Container(
+            width: 60,
+            height: 1,
+            color: Colors.black.withValues(alpha: 0.3),
+          ),
+          const SizedBox(height: 12),
+          // Tagline
+          Text(
+            'PREMIUM SHOWROOM',
+            style: TextStyle(
+              color: Colors.black.withValues(alpha: 0.5),
+              fontSize: 9,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 4.0,
             ),
-            const SizedBox(height: 12),
-            // Tagline
-            Text(
-              'PREMIUM SHOWROOM',
-              style: TextStyle(
-                color: Colors.white.withValues(alpha: 0.25),
-                fontSize: 9,
-                fontWeight: FontWeight.w500,
-                letterSpacing: 4.0,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
